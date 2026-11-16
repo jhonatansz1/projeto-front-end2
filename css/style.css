@@ -200,6 +200,58 @@ color: var(--destaque);
 font-weight: bold;
 letter-spacing: 1px;
 }
+#contact-form {
+  max-width: 600px;
+  padding: 18px;
+  background: var(--painel);
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+}
+
+.vava-img {
+  border-radius: 8px;
+}
+
+.nav-links .nav-link {
+  padding: 4px 2px;
+  color: #e8eaf0;
+  text-decoration: none;
+}
+
+.nav-links .nav-link:hover,
+.nav-links .nav-link:focus {
+  color: var(--destaque);
+}
+
+.info-box.card {
+  color: var(--texto);
+  background: var(--painel);
+  border-color: var(--borda);
+}
+
+.saved-messages {
+  max-width: 600px;
+  margin-top: 16px;
+  padding-left: 24px;
+}
+
+.saved-messages li {
+  margin: 6px 0;
+  overflow-wrap: anywhere;
+}
+
+#form-alert {
+  max-width: 600px;
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 5px 10px;
+  }
+
+  .nav-links .nav-link {
+    font-size: .82rem;
+  }
 @media (max-width: 800px) {
 .navbar { align-items: flex-start; flex-direction: column; }
 .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -207,4 +259,5 @@ letter-spacing: 1px;
 @media (max-width: 480px) {
 .card-grid { grid-template-columns: 1fr; }
 .hero { padding: 18px; }
+}
 }
